@@ -1,12 +1,12 @@
-## Heterogeneous Model Alignment in Digital Twin 
+## Semantic Drift Management in Digital Twin 
 
-This repository demonstrates heterogeneous model alignment in **a multi-layered, model-driven digital twin (DT)** architecture, supporting both rigid and flexible conformance to ensure semantic consistency, interoperability, and adaptability. Submitted to a conference, it provides source code, datasets, and documentation for the air quality use case set up.
+This repository demonstrates systematic approach for semantic dift management in **a multi-layered, model-driven digital twin (DT)**, adopting a three-step approach: (i) identification, (ii) evaluation and (iii) propagation. Submitted to a conference, it provides source code, datasets, and documentation for the air quality use case set up.
 
 It also includes reproducible experiments for:
 
-- Exploiting the capabilities of **[Javascript Modeling Framework (JSMF)](https://js-mf.github.io/)** to design and align **multi-layered, model-driven DT** by enabling both rigid and relaxed conformance across abstraction layers, i.e., data, model and metamodel.  
-- Presenting a semantics and structure-aware metamodel ontology matching (**SSM-OM**) method that integrates metamodels with domain ontologies, ensuring consistency, accuracy, and domain relevance in DT representations. 
-- Demonstrating the practicality of our approach through air quality use case and evaluate its performance using different test cases from **[OAEI tracks](https://oaei.ontologymatching.org/)**.
+- We employ a bottom-up approach with a case-based generalization strategy to systematically analyze and manage different variants of semantic drift in model-driven, multi-layered DTs, emerging from data. 
+- We provide methods to identify different variants of semantic drift and propagate changes to correct semantic drift across abstraction layers, exploiting features and constructs of heterogeneous model alignment approach (see **[details](https://arxiv.org/abs/2512.15281)**). 
+- We provide different methods to quantify or evaluate variants of semantic drift across each abstraction layer.
 
 ### Air Quality Usecase 
 
@@ -27,9 +27,14 @@ dt-model-alignment/
 │   └── model-metamodel.js                    # DT Model-Metamodel layer 
 ├── node modules                           
 ├── ontology-layer/                      # DT ontology Layer for Air Quality Usecase Setup                             
-│   └── metamodel-ontology-matching.py         # Semantic and Structure-aware Metamodel Ontology Matching (SSM-OM)
-├── output/                               # Results in .csv files for all experiments for matching tasks
-├── testcases/                            # OAEI Testcases Used for Evaluation
+│   └── metamodel-ontology-matching.py        # Semantic and Structure-aware Metamodel Ontology Matching (SSM-OM)
+├── output/                              # Results in .csv files for all experiments for matching tasks
+├── semantic-drift/                      # Semantic Drift Management in multi-layered, model-driven DT
+│   └── structural-drift.js                   # Structural drift identification and evaluation
+│   └── uc1-knowledge-conceptual-drift.py     # Knowledge Conceptual drift evaluation and propagation for Drift Scenario 1 
+│   └── uc1-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Scenario 1 
+│   └── uc2-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Scenario 2 
+├── testcases/                           # OAEI Testcases Used for Evaluation
 ├── .gitattributes 
 └── README.md
 └── package.json
