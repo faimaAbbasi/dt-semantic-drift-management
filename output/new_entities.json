@@ -1,0 +1,10 @@
+[
+  {
+    "name": "PressureSensor",
+    "primitive_attributes": [
+      "pressure: isNumber",
+      "pressure_unit: isString"
+    ],
+    "description": "The PressureSensor entity measures and monitors the ambient pressure within a building or specific zone to provide insights on air flow, humidity, and overall environmental conditions."
+  }
+]
