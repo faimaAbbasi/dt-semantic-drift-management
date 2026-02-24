@@ -83,7 +83,7 @@ For npm
 npm install
 ```
 ### Usage and Examples
-Follow these steps to set-up digital twin and manage semantic drift systematically.
+Follow these steps to set-up DT and manage semantic drift systematically.
 
 #### 1. Digital Twin Set-up
 To set up the DT model-metamodel layer for the air quality use case with data, run the following file:
