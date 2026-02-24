@@ -40,9 +40,9 @@ dt-model-alignment/
 ├── output/                              # Results in .csv files for all experiments for matching tasks
 ├── semantic-drift/                      # Semantic Drift Management in multi-layered, model-driven DT
 │   └── structural-drift.js                   # Structural drift identification and evaluation
-│   └── uc1-knowledge-conceptual-drift.py     # Knowledge Conceptual drift evaluation and propagation for Drift Scenario 1 
-│   └── uc1-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Scenario 1 
-│   └── uc2-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Scenario 2 
+│   └── uc1-knowledge-conceptual-drift.py     # Knowledge Conceptual drift evaluation and propagation for Drift Case 1 
+│   └── uc1-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Case 1 
+│   └── uc2-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Case 2 
 ├── testcases/                           # OAEI Testcases Used for Evaluation
 ├── .gitattributes 
 └── README.md
@@ -55,7 +55,7 @@ Follow are steps to set up and run this project locally.
 
 #### 1. Clone Repository
 ```bash
-git clone https://github.com/faimaAbbasi/dt-model-alignment.git
+git clone https://github.com/faimaAbbasi/dt-semantic-drift-management.git
 cd dt-model-alignment
 ```
 
