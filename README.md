@@ -14,9 +14,7 @@ Air quality in a room is closely related to the concentration of occupants and t
 
 In the baseline system, a **Building** consists of multiple **Rooms**, each equipped with **Controllers** connected to **Sensors** (to monitor air quality) and **Alarms** (to notify occupants). Detecting threshold violations allows the system to take appropriate measures to maintain healthy indoor air quality. Airquality use case is adapted from **[here](https://github.com/derlehner/IndoorAirQuality_DigitalTwin_Exemplar)**. We integrated and mapped an **[air quality dataset](https://doi.org/10.17605/OSF.IO/BAEW7)** of 2.5 million one-minute samples from 10 sensors to the DT structure for studying heterogeneous model alignment and semantic consistency across all layers. We consider two semantic drift scenarios from airquality usecase stated as follows:
 
-- **Drift Case 1 - Load Level:** A new functionality is added in a controller to measure how intensely a controller is operating based on environmental and occupancy conditions. It helps in performance tracking, balancing, and predictive maintenance. It is calculated using insights from the other sensors, i.e., proximity, humidity and temperature, linked with controller. 
-
-A sample load-level attribute calculation is shown below, where weights like 1.5 and 0.5 represent the relative impact of environmental factors on the controller's workload. 
+- **Drift Case 1 - Load Level:** A new functionality is added in a controller to measure how intensely a controller is operating based on environmental and occupancy conditions. It helps in performance tracking, balancing, and predictive maintenance. It is calculated using insights from the other sensors, i.e., proximity, humidity and temperature, linked with controller. A sample load-level attribute calculation is shown below, where weights like 1.5 and 0.5 represent the relative impact of environmental factors on the controller's workload. 
 
 ```bash
 score = proximity value + (1.5 * (current temperature - optimal setpoint)) + (0.5 * (current humidity - optimal setpoint))
