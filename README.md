@@ -134,17 +134,17 @@ To identify and evaluate structural drift from data, execute the following scrip
 cd semantic-drift
 node structural-drift.js     
 ```
-To evaluate and propagte technical conceptual drift for Drift Case 1, execute the following script.
+To evaluate and propagte technical conceptual drift for **Drift Case 1**, execute the following script.
 ```bash
 cd semantic-drift
 node uc1-technical-conceptual-drift.js     
 ```
-To evaluate and propagte knowledge conceptual drift for Drift Case 1, execute the following script.
+To evaluate and propagte knowledge conceptual drift for **Drift Case 1**, execute the following script.
 ```bash
 cd semantic-drift
 node uc1-knowledge-conceptual-drift.py     
 ```
-To evaluate and propagte technical conceptual drift for Drift Case 2, execute the following script.
+To evaluate and propagte technical conceptual drift for **Drift Case 2**, execute the following script.
 ```bash
 cd semantic-drift
 node uc2-technical-conceptual-drift.js     
