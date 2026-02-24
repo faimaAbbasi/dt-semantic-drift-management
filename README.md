@@ -27,7 +27,7 @@ load-level = "Low" if score < 10 else "Moderate" if score <= 20 else "High"
 ### Project Hierarchy
 Below is folder structure for project:
 ```
-dt-model-alignment/
+dt-semantic-drift-management/
 │
 ├── data-layer/                          # DT Data Layer for Air Quality Usecase Setup (Historical and New Data)
 ├── evaluation/                          # Experiment related to Evaluation of SSM-OM on OAEI Testcases
