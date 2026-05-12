@@ -1,0 +1,16 @@
+# QUERY 1: BRITTLE QUERY (Before Alignment - Metamodel-Specific)
+# Purpose: Find TemperatureSensor instances using only proprietary metamodel
+# Status: Naming-dependent, not interoperable
+# Execution Context: Use with your Brick/REC ontology alignment RDF store
+
+PREFIX mm: <http://metamodel#>
+PREFIX dt: <http://dt/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?instance ?value ?unit 
+WHERE {
+    ?instance rdf:type mm:TemperatureSensor .
+    ?instance mm:value ?value .
+    ?instance mm:unit ?unit .
+}
+ORDER BY ?value

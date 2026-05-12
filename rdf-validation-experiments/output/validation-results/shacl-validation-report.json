@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-04-22T16:09:11.747396",
+  "validation_method": "SHACL-based",
+  "data_graph": {
+    "triples": 69,
+    "classes": 0,
+    "properties": 0
+  },
+  "shapes_graph": {
+    "triples": 49
+  },
+  "validation": {
+    "status": "completed_manual",
+    "conforms": true,
+    "violations_count": 0,
+    "violations": [],
+    "statistics": {
+      "total_classes": 7,
+      "total_properties": 16,
+      "classes_with_labels": 7,
+      "properties_with_domain": 16,
+      "properties_with_range": 16
+    }
+  }
+}

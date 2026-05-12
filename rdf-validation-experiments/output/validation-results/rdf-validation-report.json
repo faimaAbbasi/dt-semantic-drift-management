@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-04-22T16:09:11.591942",
+  "source_statistics": {
+    "json_classes": 7,
+    "rdf_triples": 69,
+    "rdf_classes": 7,
+    "rdf_properties": 16
+  },
+  "validations": {
+    "roundtrip": {
+      "class_count_match": true,
+      "original_class_count": 7,
+      "reconstructed_class_count": 7,
+      "class_preservation_rate": 1.0,
+      "attribute_preservation_rate": 0.0,
+      "preserved_classes": [
+        "building",
+        "room",
+        "temperaturesensor",
+        "humiditysensor",
+        "proximitysensor",
+        "controller",
+        "alarm"
+      ],
+      "missing_classes": [],
+      "details": []
+    },
+    "completeness": {
+      "total_classes": 7,
+      "classes_with_labels": 7,
+      "classes_with_comments": 7,
+      "properties_with_domain": 16,
+      "properties_with_range": 16,
+      "total_properties": 16,
+      "object_properties": 6,
+      "datatype_properties": 10,
+      "completeness_score": 1.0,
+      "issues": [],
+      "class_details": [
+        {
+          "uri": "http://metamodel#Building",
+          "has_label": true,
+          "has_comment": true
+        },
+        {
+          "uri": "http://metamodel#Controller",
+          "has_label": true,
+          "has_comment": true
+        },
+        {
+          "uri": "http://metamodel#TemperatureSensor",
+          "has_label": true,
+          "has_comment": true
+        },
+        {
+          "uri": "http://metamodel#Room",
+          "has_label": true,
+          "has_comment": true
+        },
+        {
+          "uri": "http://metamodel#Alarm",
+          "has_label": true,
+          "has_comment": true
+        },
+        {
+          "uri": "http://metamodel#ProximitySensor",
+          "has_label": true,
+          "has_comment": true
+        },
+        {
+          "uri": "http://metamodel#HumiditySensor",
+          "has_label": true,
+          "has_comment": true
+        }
+      ]
+    },
+    "shacl": {
+      "status": "skipped",
+      "reason": "pyshacl not installed. Install with: pip install pyshacl",
+      "conforms": null,
+      "violations": []
+    },
+    "semantic_equivalence": {
+      "queries_tested": 5,
+      "queries_equivalent": 5,
+      "semantic_equivalence_rate": 1.0,
+      "query_results": [
+        {
+          "query_name": "All classes",
+          "query": "SELECT ?class WHERE { ?class a rdfs:Class . }",
+          "original_result_count": 7,
+          "rdf_result_count": 7,
+          "equivalent": true,
+          "sample_original": [
+            "(rdflib.term.URIRef('http://metamodel#Building'),)",
+            "(rdflib.term.URIRef('http://metamodel#Room'),)"
+          ],
+          "sample_rdf": [
+            "(rdflib.term.URIRef('http://metamodel#Building'),)",
+            "(rdflib.term.URIRef('http://metamodel#Room'),)"
+          ]
+        },
+        {
+          "query_name": "All classes (OWL)",
+          "query": "SELECT ?class WHERE { ?class a owl:Class . }",
+          "original_result_count": 0,
+          "rdf_result_count": 0,
+          "equivalent": true,
+          "sample_original": [],
+          "sample_rdf": []
+        },
+        {
+          "query_name": "All properties with domain",
+          "query": "SELECT ?prop ?domain WHERE { ?prop rdfs:domain ?domain . }",
+          "original_result_count": 16,
+          "rdf_result_count": 16,
+          "equivalent": true,
+          "sample_original": [
+            "(rdflib.term.URIRef('http://metamodel#Building_id'), rdflib.term.URIRef('http://",
+            "(rdflib.term.URIRef('http://metamodel#Building_rooms'), rdflib.term.URIRef('http"
+          ],
+          "sample_rdf": [
+            "(rdflib.term.URIRef('http://metamodel#Building_id'), rdflib.term.URIRef('http://",
+            "(rdflib.term.URIRef('http://metamodel#Building_rooms'), rdflib.term.URIRef('http"
+          ]
+        },
+        {
+          "query_name": "All properties with range",
+          "query": "SELECT ?prop ?range WHERE { ?prop rdfs:range ?range . }",
+          "original_result_count": 16,
+          "rdf_result_count": 16,
+          "equivalent": true,
+          "sample_original": [
+            "(rdflib.term.URIRef('http://metamodel#Building_id'), rdflib.term.Literal('isStri",
+            "(rdflib.term.URIRef('http://metamodel#Room_id'), rdflib.term.Literal('isString')"
+          ],
+          "sample_rdf": [
+            "(rdflib.term.URIRef('http://metamodel#Building_id'), rdflib.term.Literal('isStri",
+            "(rdflib.term.URIRef('http://metamodel#Room_id'), rdflib.term.Literal('isString')"
+          ]
+        },
+        {
+          "query_name": "Count of all triples",
+          "query": "SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o . }",
+          "original_result_count": 1,
+          "rdf_result_count": 1,
+          "equivalent": true,
+          "sample_original": [
+            "(rdflib.term.Literal('69', datatype=rdflib.term.URIRef('http://www.w3.org/2001/X"
+          ],
+          "sample_rdf": [
+            "(rdflib.term.Literal('69', datatype=rdflib.term.URIRef('http://www.w3.org/2001/X"
+          ]
+        }
+      ]
+    }
+  },
+  "summary": {
+    "structure_preservation_rate": 1.0,
+    "schema_completeness_score": 1.0,
+    "semantic_equivalence_rate": 1.0,
+    "overall_transformation_quality": 1.0
+  }
+}

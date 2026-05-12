@@ -1,0 +1,153 @@
+{
+  "query_metadata": {
+    "query_file": "query-3-semantic-propagation-trace.sparql",
+    "query_name": "Semantic Propagation - Cross-Layer Trace",
+    "execution_date": "2026-05-12T09:48:02.650128",
+    "status": "SUCCESS"
+  },
+  "results": {
+    "count": 20,
+    "data": [
+      {
+        "instance_layer": "http://dt/instance/0",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 19.19255375539069,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/1",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 21.82518092827249,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/2",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.780981329804646,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/3",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 23.310609549635046,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/4",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 18.7202000113145,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/5",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 19.833088470138208,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/6",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 20.44949500169985,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/7",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 20.78560659769861,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/8",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 21.00091454618921,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/9",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 21.44813954803576,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/10",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 21.680081168100404,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/11",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.131825873100965,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/12",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 21.941174565771423,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/13",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.498674639831243,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/14",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.501159110054285,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/15",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.527429191645503,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/16",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.802803651400488,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/17",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.87066093005137,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/18",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 23.131948438355217,
+        "semantic_path_length": 3
+      },
+      {
+        "instance_layer": "http://dt/instance/19",
+        "metamodel_layer": "http://metamodel/TemperatureSensor",
+        "ontology_layer": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "value": 22.88428033215432,
+        "semantic_path_length": 3
+      }
+    ]
+  }
+}

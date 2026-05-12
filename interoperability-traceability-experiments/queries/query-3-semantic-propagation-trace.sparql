@@ -1,0 +1,43 @@
+# QUERY 3: SEMANTIC PROPAGATION TRACE (Cross-Layer Reasoning)
+# Purpose: Demonstrate semantic propagation across 3 DT abstraction layers
+# Layer 1: Instance (concrete sensor data - 18.7°C to 23.3°C)
+# Layer 2: Metamodel (your proprietary mm:TemperatureSensor class)
+# Layer 3: Ontology (Brick standard via alignment)
+# Alignment: mm:TemperatureSensor ≡ brick:Soil_Temperature_Sensor (score: 0.57)
+
+PREFIX dt: <http://dt/>
+PREFIX mm: <http://metamodel#>
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT 
+    ?tempReading
+    ?instance 
+    ?instanceLayer
+    ?metamodelClass
+    ?metamodelLayer
+    ?ontologyClass
+    ?ontologyLayer
+WHERE {
+    # Layer 1: Instance (concrete sensor data - actual temperature readings)
+    ?instance rdf:type ?metamodelClass .
+    ?instance mm:value ?tempReading .
+    ?instance mm:unit ?unit .
+    
+    # Filter for temperature range 18.7°C to 23.3°C
+    FILTER(?tempReading >= 18.7 && ?tempReading <= 23.3 && ?unit = "Celsius")
+    
+    BIND(CONCAT("Instance: ", STR(?instance), " [", STR(?tempReading), "°C]") AS ?instanceLayer)
+    
+    # Layer 2: Metamodel (your proprietary class definition)
+    FILTER(CONTAINS(STR(?metamodelClass), "TemperatureSensor"))
+    BIND(CONCAT("Metamodel: ", STR(?metamodelClass)) AS ?metamodelLayer)
+    
+    # Layer 3: Ontology (Brick standard via alignment)
+    ?metamodelClass owl:equivalentClass ?ontologyClass .
+    FILTER(CONTAINS(STR(?ontologyClass), "Temperature_Sensor") || CONTAINS(STR(?ontologyClass), "Soil_Temperature"))
+    BIND(CONCAT("Ontology: ", STR(?ontologyClass)) AS ?ontologyLayer)
+}
+ORDER BY ?tempReading

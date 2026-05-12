@@ -1,0 +1,36 @@
+{
+  "execution_timestamp": "2026-04-22T16:09:11.588981",
+  "results": {
+    "rdf_transformation": {
+      "status": "success",
+      "report_path": "C:\\Users\\abbasi\\Desktop\\dt-model-alignment\\rdf-validation\\output\\validation-results\\rdf-validation-report.json",
+      "summary": {
+        "structure_preservation_rate": 1.0,
+        "schema_completeness_score": 1.0,
+        "semantic_equivalence_rate": 1.0,
+        "overall_transformation_quality": 1.0
+      }
+    },
+    "shacl": {
+      "status": "success",
+      "validation_method": "SHACL-based",
+      "conforms": true,
+      "violations_count": 0
+    },
+    "alignment_sensitivity": {
+      "status": "success",
+      "report_path": "C:\\Users\\abbasi\\Desktop\\dt-model-alignment\\rdf-validation\\output\\validation-results\\alignment-sensitivity-experiment.json",
+      "summary": {
+        "rdf_f1_score": 1.0,
+        "json_f1_score": 0.8000000000000002,
+        "rdf_is_better": true
+      }
+    }
+  },
+  "summary": {
+    "total_validations": 3,
+    "successful": 3,
+    "failed": 0,
+    "errors": []
+  }
+}

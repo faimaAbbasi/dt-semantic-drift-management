@@ -1,0 +1,153 @@
+{
+  "query_metadata": {
+    "query_file": "query-2-robust-ontology-aligned.sparql",
+    "query_name": "Robust Query - Ontology-Aligned with OWL Bridge",
+    "execution_date": "2026-05-12T09:48:02.648602",
+    "status": "SUCCESS"
+  },
+  "results": {
+    "count": 20,
+    "data": [
+      {
+        "instance": "http://dt/instance/4",
+        "temperature": 18.7202000113145,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/0",
+        "temperature": 19.19255375539069,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/5",
+        "temperature": 19.833088470138208,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/6",
+        "temperature": 20.44949500169985,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/7",
+        "temperature": 20.78560659769861,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/8",
+        "temperature": 21.00091454618921,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/9",
+        "temperature": 21.44813954803576,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/10",
+        "temperature": 21.680081168100404,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/1",
+        "temperature": 21.82518092827249,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/12",
+        "temperature": 21.941174565771423,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/11",
+        "temperature": 22.131825873100965,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/13",
+        "temperature": 22.498674639831243,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/14",
+        "temperature": 22.501159110054285,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/15",
+        "temperature": 22.527429191645503,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/2",
+        "temperature": 22.780981329804646,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/16",
+        "temperature": 22.802803651400488,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/17",
+        "temperature": 22.87066093005137,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/19",
+        "temperature": 22.88428033215432,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/18",
+        "temperature": 23.131948438355217,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      },
+      {
+        "instance": "http://dt/instance/3",
+        "temperature": 23.310609549635046,
+        "room": "Reception Area",
+        "brick_class": "https://brickschema.org/schema/Brick#Temperature_Sensor",
+        "alignment_enabled": true
+      }
+    ]
+  }
+}

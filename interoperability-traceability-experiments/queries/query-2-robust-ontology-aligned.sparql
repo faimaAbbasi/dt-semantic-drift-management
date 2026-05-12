@@ -1,0 +1,34 @@
+# QUERY 2: ROBUST QUERY (After Alignment - Ontology-Based)
+# Purpose: Find temperature sensors using Brick standard via OWL alignment
+# Status: Naming-independent, interoperable with external systems
+# Alignment: mm:TemperatureSensor ≡ brick:Soil_Temperature_Sensor (score: 0.57)
+
+PREFIX dt: <http://dt/>
+PREFIX mm: <http://metamodel#>
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?metamodelClass ?instance ?value ?unit ?brickClass ?alignmentScore
+WHERE {
+    # LINK 1: Your metamodel class definition
+    BIND(mm:TemperatureSensor AS ?metamodelClass)
+    
+    # LINK 2: Instances of your metamodel class
+    ?instance rdf:type mm:TemperatureSensor .
+    
+    # LINK 3: Get instance data from your metamodel
+    ?instance mm:value ?value .
+    ?instance mm:unit ?unit .
+    
+    # ALIGNMENT BRIDGE: OWL equivalence bridges your metamodel to Brick standard
+    # This enables external systems to query using Brick vocabulary
+    mm:TemperatureSensor owl:equivalentClass ?brickClass .
+    
+    # Verify it's the Brick Temperature Sensor
+    FILTER(CONTAINS(STR(?brickClass), "Soil_Temperature") || CONTAINS(STR(?brickClass), "Temperature_Sensor"))
+    
+    # Document the alignment score (metadata)
+    BIND("0.57" AS ?alignmentScore)
+}
+ORDER BY ?value

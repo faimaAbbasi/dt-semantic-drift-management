@@ -4,31 +4,44 @@ import xml.etree.ElementTree as ET
 import tempfile
 import tarfile
 import os 
+import py7zr # type: ignore
 
 LLM_MODEL = 'llama3'
 HOPS_FOR_CONTEXT = 5
 
-def load_ontology_from_tar(tar_path, internal_filename):
+
+def load_ontology_from_7z(archive_path, internal_filename):
     """
-    Extracts a file from a TAR archive into a temporary folder
+    Extracts a file from a 7z archive into a temporary folder
     and returns the temporary path so RDFlib can read it.
     """
     temp_dir = tempfile.mkdtemp()
 
-    with tarfile.open(tar_path, "r") as tar:
-        member = tar.getmember(internal_filename)
-        tar.extract(member, temp_dir)
+    with py7zr.SevenZipFile(archive_path, mode='r') as archive:
+        all_files = archive.getnames()
+        if internal_filename not in all_files:
+            raise FileNotFoundError(f"{internal_filename} not found in {archive_path}")
+        archive.extract(targets=[internal_filename], path=temp_dir)
 
     extracted_path = os.path.join(temp_dir, internal_filename)
     return extracted_path
 
-TAR_PATH = "../testcases/anatomy.tar"
+TAR_PATH = "../testcases/knowledge-graph-1.7z"
 
-REF_ALIGNMENT_PATH = load_ontology_from_tar(
+SOURCE_OWL_PATH = load_ontology_from_7z(
     TAR_PATH,
-    "anatomy/mouse-human-reference.xml"
+    "knowledge-graph-1/memoryalpha-source.xml"
 )
 
+TARGET_OWL_PATH = load_ontology_from_7z(
+    TAR_PATH,
+    "knowledge-graph-1/stexpanded-target.xml"
+)
+
+REF_ALIGNMENT_PATH = load_ontology_from_7z(
+    TAR_PATH,
+    "knowledge-graph-1/memoryalpha-stexpanded-reference.xml"
+)
 
 def evaluate_alignments(predicted_csv_path, reference_alignments):
     predicted_alignments = set()
@@ -85,7 +98,7 @@ def parse_reference_alignment(file_path):
 
 def main():
     reference_alignments = parse_reference_alignment(REF_ALIGNMENT_PATH)
-    results = evaluate_alignments('../output/anatomy/mouse-human-mappings.csv', reference_alignments)
+    results = evaluate_alignments('../output/knowledge-graph-1/memoryalpha-stexpanded-mappings.csv', reference_alignments)
     print("TP:", len(results["true_positives"]), "\n")
     print("FP:", len(results["false_positives"]), "\n")
     print("FN:", len(results["false_negatives"]), "\n")
