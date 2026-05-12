@@ -18,7 +18,7 @@ In the baseline system, a **Building** consists of multiple **Rooms**, each equi
 ### Project Hierarchy
 Below is folder structure for project:
 ```
-dt-model-alignment/
+dt-metamodel-semantic-grounding/
 │
 ├── ablation-experiments/                          # Ablation Study Experiments for SSM-OM on common-kg OAEI Testcase
 ├── data-layer/                                    # DT Data Layer for Air Quality Usecase Setup (Historical and New Data)
