@@ -29,21 +29,25 @@ Below is folder structure for project:
 ```
 dt-semantic-drift-management/
 │
-├── data-layer/                          # DT Data Layer for Air Quality Usecase Setup (Historical and New Data)
-├── evaluation/                          # Experiment related to Evaluation of SSM-OM on OAEI Testcases
-├── model-metamodel-layer/               # DT Model and Metamodel Layer for Air Quality Usecase Setup
-│   ├── metamodel-flexibility.js              # Change Adaptation
-│   └── model-metamodel.js                    # DT Model-Metamodel layer 
-├── node modules                           
-├── ontology-layer/                      # DT ontology Layer for Air Quality Usecase Setup                             
-│   └── metamodel-ontology-matching.py        # Semantic and Structure-aware Metamodel Ontology Matching (SSM-OM)
-├── output/                              # Results in .csv files for all experiments for matching tasks
-├── semantic-drift/                      # Semantic Drift Management in multi-layered, model-driven DT
-│   └── structural-drift.js                   # Structural drift identification and evaluation
-│   └── uc1-knowledge-conceptual-drift.py     # Knowledge Conceptual drift evaluation and propagation for Drift Case 1 
-│   └── uc1-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Case 1 
-│   └── uc2-technical-conceptual-drift.py     # Technical Conceptual drift evaluation and propagation for Drift Case 2 
-├── testcases/                           # OAEI Testcases Used for Evaluation
+├── ablation-experiments/                          # Ablation Study Experiments for SSM-OM on common-kg OAEI Testcase
+├── data-layer/                                    # DT Data Layer for Air Quality Usecase Setup (Historical and New Data)
+├── interoperability-traceability-experiments/     # Experiments for evaluating interoperability and cross-layer traceability
+├── model-metamodel-layer/                         # DT Model and Metamodel Layer for Air Quality Usecase Setup
+│   ├── metamodel-flexibility.js                      # Change Adaptation
+│   └── model-metamodel.js                            # DT Model-Metamodel layer 
+├── node modules
+├── oaei-testcase-evaluation/                      # Experiment related to Evaluation of SSM-OM on OAEI Testcases                          
+├── ontology-layer/                                # DT ontology Layer for Air Quality Usecase Setup
+│   ├── brick.ttl                                     # Ontology used for Aligning Metamodel                             
+│   └── metamodel-ontology-matching.py                # Semantic and Structure-aware Metamodel Ontology Matching (SSM-OM)
+├── output/                                        # Results in .csv files for all experiments for matching tasks
+├── semantic-drift/                                # Semantic Drift Management in multi-layered, model-driven DT
+│   └── structural-drift.js                           # Structural drift identification and evaluation
+│   └── uc1-knowledge-conceptual-drift.py             # Knowledge Conceptual drift evaluation and propagation for Drift Case 1 
+│   └── uc1-technical-conceptual-drift.py             # Technical Conceptual drift evaluation and propagation for Drift Case 1 
+│   └── uc2-technical-conceptual-drift.py             # Technical Conceptual drift evaluation and propagation for Drift Case 2 
+├── rdf-validation-experiments/                    # Validation of DT Metamodel Semantic Lifting
+├── testcases/                                        # OAEI Testcases Used for Evaluation
 ├── .gitattributes 
 └── README.md
 └── package.json
